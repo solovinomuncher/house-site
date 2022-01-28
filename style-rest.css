@@ -140,6 +140,7 @@ a:hover {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .return-home-img {
@@ -160,5 +161,9 @@ a:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .return-home-img {
+        width: 100px;
     }
 }
