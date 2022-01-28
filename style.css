@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    height: 98vh;
+    padding: 1vh;
+    background-color: black;
+}
+
+.home {
+    text-decoration: none;
+    color: black;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home:hover,
+.home:focus {
+    background-color: pink;
+}
+
+.images {
+    width: 8vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1fr, 500px));
+    grid-template-rows: repeat(9, 10vh);
+    grid-template-areas: 
+        "topbar     topbar      topbar"
+        "linksbar   linksbar    linksbar"
+        "mainbox    mainbox     mainbox"
+        "mainbox    mainbox     mainbox"
+        "mainbox    mainbox     mainbox"
+        "fourbox    fourbox     fourbox"
+        "fourbox    fourbox     fourbox"
+        "fourbox    fourbox     fourbox"
+        "footer     footer      footer";
+    gap: 1vh;
+}
+
+.box {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.abox {
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+.main {
+    grid-area: mainbox;
+}
+
+.topbar {
+    grid-area: topbar;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.linksbar {
+    grid-area: linksbar;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.updates {
+    grid-area: mainbox;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.fourbox {
+    grid-area: fourbox;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* updates */
+.update {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    /* justify-items: center; */
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.update-date {
+    justify-self: center;
+}
+
+.update-text {
+    justify-self: start;
+}
+
+.update-recent {
+    background: lightgrey;
+    border: 1px solid red;
+}
+
+.update-previous {
+    background: gray;
+}
+
+.update-old {
+    background: gray;
+}
+
+/* main buttons */
+.main-nav:hover {
+    background-color: pink;
+}
+
+.calendar,
+.rules,
+.complaints,
+.meetings {
+    background-color: lightgrey;
+    display: grid;
+    grid-template: 1fr 4fr / 1fr;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* footer */
+.footer {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+/* stop from extending width infinitely */
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
