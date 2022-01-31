@@ -147,6 +147,96 @@ a:hover {
     width: 100%;
 }
 
+/* ============= */
+/* meetings */
+/* ============= */
+
+.meeting-box {
+    display: grid;
+    justify-items: center;
+}
+
+.meeting-box__title {
+    padding-top: 10px;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.meeting-box__agenda {
+    display: grid;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.meeting-box__agenda > ul {
+    display: grid;
+    justify-items: center;
+}
+
+.meeting-box__when2meet {
+    display: grid;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.meeting-box__topic-form {
+    display: grid;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.meeting-box__topic-form > textarea {
+    background: lightgrey;
+    width: 80%;
+    height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.meeting-box__topic-form > button {
+    background: lightgrey;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* ============= */
+/* complaint form */
+/* ============= */
+
+.complaint-form {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.complaint-form > h2 {
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.complaint-form > p {
+    margin-bottom: 10px;
+}
+
+.complaint-form > input[type="text"] {
+    width: 80%;
+}
+
+.complaint-form > input[type="submit"] {
+    margin-top: 10px;
+    background: lightgrey;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
 /* footer */
 .footer {
     display: grid;
